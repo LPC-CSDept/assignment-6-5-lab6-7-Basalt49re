@@ -9,3 +9,16 @@ using namespace std;
 //              This function will use swaptwo().
 
 // swaptwo() ; to swap two values (a, b) to (b, a)
+int swaptwo(int &a,int &b )
+{
+    int temp = a;
+    a = b;
+    b = temp;
+}
+
+void swap(int &a,int &b,int &c)
+{
+    int temp = a;
+    swaptwo(a,c);
+    swaptwo(b,temp);
+}
