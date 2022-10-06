@@ -18,7 +18,9 @@ int swaptwo(int &a,int &b )
 
 void swap(int &a,int &b,int &c)
 {
-    int temp = a;
+    int temp1 = a;
+    int temp2 = b;
     swaptwo(a,c);
-    swaptwo(b,temp);
+    swaptwo(b,temp1);
+    swaptwo(c,temp2);
 }
